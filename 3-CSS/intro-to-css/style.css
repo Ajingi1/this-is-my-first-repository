@@ -1,0 +1,85 @@
+*{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span{
+    background-color: aquamarine;
+}
+li{
+    background-color: red;
+}
+.listClass{
+    background-color: orange;
+}
+#listId{
+    background-color: yellow;
+}
+li[value="list"]{
+    background-color: green;
+}
+.listClass1, .listClass2{
+    background-color: skyblue;
+}
+ul .listClass3{
+    background-color: indigo;
+    color: white;
+}
+
+/* psedo-class */
+.hoverBtn:hover{
+    background-color: black;
+    columns: white;
+    cursor: pointer;
+}
+.activeBtn:active{
+    background-color: darkgray;
+    color: black;
+}
+.focusInput:focus{
+    background-color: skyblue;
+    border-width: 5px;
+}
+.VisitedLink:visited{
+    color: red;
+}
+.firstLetter::first-letter{
+    font-size: 3em;
+}
+.firstLine::first-line{
+    color: blue;
+}
+
+/* pseudo elements */
+.beforeAndAfter::before{
+    content: "Before ";
+    color: red;
+}
+.beforeAndAfter::after{
+    content: " After";
+    color: blue;
+}
+.selectParts::selection{
+    background-color: crimson;
+}
+/* earlier rule */
+.cascade{
+    color: red !important;
+}
+
+/* Later rule */
+.cascade{
+    color: blue;
+}
+/* Box Model */
+.boxModel{
+    background-color: white;
+    /* border-color: black;
+    border-width: 5px;
+    border-style: dashed; */
+    /* border: black 5px solid; */
+    border-style: dashed dotted double solid;
+    border-color: red rebeccapurple darkblue darkblue;
+    border-width: 12px 5px 7px 10px;
+    margin: 10px;
+    padding: 10px;
+}
