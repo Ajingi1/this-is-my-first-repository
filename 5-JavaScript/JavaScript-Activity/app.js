@@ -1,13 +1,13 @@
 let score  = parseInt(prompt("Enter the score"));
 
 if (score >= 90) {
-    console.log("Score" , score ,":", "Grade 'A'" );
+    console.log("The Grade for Score" , score ,"is: 'A'" );
 } else if(score > 80 && score <= 89){
-    console.log("Score" , score ,":", "Grade 'B'" );
+    console.log("The Grade for Score" , score ,"is: 'B'" );
 }else if(score > 70 && score <= 79){
-    console.log("Score" , score ,":", "Grade 'C'" );
+    console.log("The Grade for Score" , score ,"is: 'C'" );
 }else if(score > 60 && score <= 69){
-    console.log("Score" , score ,":", "Grade 'D'" );
+    console.log("The Grade for Score" , score ,"is: 'D'" );
 }else{
-    console.log("Score" , score ,":", "Grade 'F'" );
+    console.log("The Grade for Score" , score ,"is: 'F'" );
 }
