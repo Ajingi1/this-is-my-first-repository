@@ -1,25 +1,36 @@
-// Data types in JS
-// string, number, Boolean
+// Introduction to Arrays
+let superheros = ["supaerman", "Batman", "Joker", "Spiderman", "Wonder woman"];
 
-// string
-let name = "John";
-console.log("The tyoe of name", typeof name);
+console.log("Hero 1 is", superheros[0]);
+console.log("Hero 5 is", superheros[4]);
 
+superheros[2] = "Doctor Strange";
+console.log(superheros);
 
-// number
-let age = 25;
-console.log("The type of age", typeof age);
+// Add value to the end of  array
+// push method
+superheros.push("Deadpool");
+console.log(superheros);
 
-// Boolean
-let isStudent = false;
-let isTeacher = true;
-console.log("The type of",  typeof isStudent);
-console.log("The type of",  typeof isTeacher);
+// remove last value from array
+// pop method
+superheros.pop();
+console.log(superheros);
 
-// null -  intentional absence of data
-let girlFreind = null;
-console.log("The type of ", typeof girlFreind);
+// Array iteration
+for(let i = 0; i < superheros.length; i++){
+    console.log("Hero: ", i+1,  superheros[i]);
+};
 
-let city;
-console.log("The valueof city", city);
-console.log("The type of city", typeof city);
+// for Each method
+superheros.forEach(function(hero){
+    console.log(hero);
+});
+
+// Array Methods
+console.log("Array length is", superheros.length);
+console.log("value of 3 is", superheros.indexOf("Wonder woman"));
+console.log("Joined Array:", superheros.join("-"));
+
+let sclicedArray = superheros.slice(0, 1);
+console.log(sclicedArray);
